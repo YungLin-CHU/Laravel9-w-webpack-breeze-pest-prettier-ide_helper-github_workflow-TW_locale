@@ -45,6 +45,14 @@ If you use VS code as your editor, devcontainer is also available.
 cp .devcontainer/devcontainer.json.example .devcontainer/devcontainer.json
 ```
 
+### Testing
+
+PestPHP is used for testing.
+
+```bash
+touch database/database.sqlite
+```
+
 ### Production
 
 ```bash
