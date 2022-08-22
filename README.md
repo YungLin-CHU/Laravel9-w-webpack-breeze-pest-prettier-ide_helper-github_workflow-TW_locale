@@ -36,7 +36,7 @@ npm run dev
 If you have problem with executing composer, artisan and npm commands with sail, you can use docker-compose instead.
 
 ```bash
-docker-compose exec laravel.test bash
+docker-compose exec --user=sail laravel.test bash
 ```
 
 If you use VS code as your editor, devcontainer is also available.
@@ -54,5 +54,5 @@ cp .env.exapmple .env # setup variables, set APP_DEBUG to false
 php artisan key:generate
 php artisan migrate
 
-npm run build
+npm run prod
 ```
