@@ -1,0 +1,11 @@
+/*
+!/app
+!/database
+!/lang
+!/public
+public/index.php
+public/js/app.js
+public/css/app.css
+!/resources
+!/routes
+!/tests

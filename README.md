@@ -22,6 +22,7 @@ cp .env.exapmple .env # setup variables
 php artisan key:generate
 php artisan migrate
 
+npm install
 npm run dev
 ```
 
@@ -45,12 +46,26 @@ If you use VS code as your editor, devcontainer is also available.
 cp .devcontainer/devcontainer.json.example .devcontainer/devcontainer.json
 ```
 
+#### Code Style
+
+Prettier is the selected formatter.
+
+Run the command below to format files.
+
+```bash
+npm run format
+```
+
 ### Testing
 
 PestPHP is used for testing.
 
+Run the command below to execute tests.
+
 ```bash
 touch database/database.sqlite
+
+./vendor/bin/pest
 ```
 
 ### Production
@@ -62,5 +77,6 @@ cp .env.exapmple .env # setup variables, set APP_DEBUG to false
 php artisan key:generate
 php artisan migrate
 
+npm install --production
 npm run prod
 ```

@@ -1,0 +1,14 @@
+{
+    "overrides": [
+        {
+            "files": [
+                "*.blade.php"
+            ],
+            "options": {
+                "parser": "blade",
+                "sortTailwindcssClasses": true,
+                "sortHtmlAttributes": "vuejs"
+            }
+        }
+    ]
+}
