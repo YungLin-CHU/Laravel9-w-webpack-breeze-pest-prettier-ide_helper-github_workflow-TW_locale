@@ -21,7 +21,7 @@
                 <x-label for="password" :value="__('Password')" />
 
                 <x-input id="password" class="mt-1 block w-full" type="password" name="password" required
-                         autocomplete="current-password" />
+                    autocomplete="current-password" />
             </div>
 
             <div class="mt-4 flex justify-end">
