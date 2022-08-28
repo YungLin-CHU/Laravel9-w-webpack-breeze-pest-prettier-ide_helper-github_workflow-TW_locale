@@ -17,7 +17,7 @@
                 <x-label for="name" :value="__('Name')" />
 
                 <x-input id="name" class="mt-1 block w-full" type="text" name="name" :value="old('name')" required
-                         autofocus />
+                    autofocus />
             </div>
 
             <!-- Email Address -->
@@ -25,7 +25,7 @@
                 <x-label for="email" :value="__('Email')" />
 
                 <x-input id="email" class="mt-1 block w-full" type="email" name="email" :value="old('email')"
-                         required />
+                    required />
             </div>
 
             <!-- Password -->
@@ -33,7 +33,7 @@
                 <x-label for="password" :value="__('Password')" />
 
                 <x-input id="password" class="mt-1 block w-full" type="password" name="password" required
-                         autocomplete="new-password" />
+                    autocomplete="new-password" />
             </div>
 
             <!-- Confirm Password -->
@@ -41,7 +41,7 @@
                 <x-label for="password_confirmation" :value="__('Confirm Password')" />
 
                 <x-input id="password_confirmation" class="mt-1 block w-full" type="password"
-                         name="password_confirmation" required />
+                    name="password_confirmation" required />
             </div>
 
             <div class="mt-4 flex items-center justify-end">

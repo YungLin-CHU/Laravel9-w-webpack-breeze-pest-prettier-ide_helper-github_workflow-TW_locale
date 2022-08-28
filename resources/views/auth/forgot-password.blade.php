@@ -24,7 +24,7 @@
                 <x-label for="email" :value="__('Email')" />
 
                 <x-input id="email" class="mt-1 block w-full" type="email" name="email" :value="old('email')" required
-                         autofocus />
+                    autofocus />
             </div>
 
             <div class="mt-4 flex items-center justify-end">
