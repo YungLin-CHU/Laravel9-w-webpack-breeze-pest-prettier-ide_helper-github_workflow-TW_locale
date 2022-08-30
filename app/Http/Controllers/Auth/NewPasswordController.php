@@ -47,7 +47,7 @@ class NewPasswordController extends Controller
                 "email",
                 "password",
                 "password_confirmation",
-                "token"
+                "token",
             ),
             function ($user) use ($request) {
                 $user
@@ -58,7 +58,7 @@ class NewPasswordController extends Controller
                     ->save();
 
                 event(new PasswordReset($user));
-            }
+            },
         );
 
         // If the password was successfully reset, we will redirect the user back to

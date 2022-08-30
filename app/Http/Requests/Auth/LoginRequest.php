@@ -48,7 +48,7 @@ class LoginRequest extends FormRequest
         if (
             !Auth::attempt(
                 $this->only("email", "password"),
-                $this->boolean("remember")
+                $this->boolean("remember"),
             )
         ) {
             RateLimiter::hit($this->throttleKey());
@@ -94,7 +94,7 @@ class LoginRequest extends FormRequest
     public function throttleKey()
     {
         return Str::transliterate(
-            Str::lower($this->input("email")) . "|" . $this->ip()
+            Str::lower($this->input("email")) . "|" . $this->ip(),
         );
     }
 }

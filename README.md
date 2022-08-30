@@ -34,7 +34,7 @@ npm run dev
 ./vendor/bin/sail up -d
 ```
 
-If you have problem with executing composer, artisan and npm commands with sail, you can use docker-compose instead.
+If you have problem with executing composer, artisan or npm commands with sail, you can use docker-compose instead.
 
 ```bash
 docker-compose exec --user=sail laravel.test bash
@@ -63,9 +63,25 @@ PestPHP is used for testing.
 Run the command below to execute tests.
 
 ```bash
+# Run if database.sqlite is not created.
 touch database/database.sqlite
 
 ./vendor/bin/pest
+```
+
+#### Laravel IDE Helper
+
+Laravel IDE Helper is installed to improve code experiences.
+
+Run the command below to create/update meta files.
+
+```bash
+composer dump-autoload
+
+# Or run each command respectively.
+php artisan ide-helper:generate
+php artisan ide-helper:models -n
+php artisan ide-helper:meta
 ```
 
 ### Production
