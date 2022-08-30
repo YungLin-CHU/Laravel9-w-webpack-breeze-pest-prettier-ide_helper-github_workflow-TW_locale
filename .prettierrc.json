@@ -10,5 +10,6 @@
                 "sortHtmlAttributes": "vuejs"
             }
         }
-    ]
+    ],
+    "phpVersion": "8.0"
 }
